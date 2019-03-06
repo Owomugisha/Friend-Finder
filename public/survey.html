@@ -167,9 +167,9 @@
     </div>
 
     <script type="text/javascript">
-    $(".submit").on("click",function(event){
+    $("#submit").on("click",function(event){
         event.preventDefault();
-
+        console.log('Butoon clicked')
         var newFriend = {
             'name':$('#name').val().trim(),
             'photo':$('#photo').val().trim(),
@@ -183,9 +183,7 @@
 
             $("#results-modal").modal("toggle");
 
-            if(data){
-                alert("Please fill out all fields before submitting!");
-            }
+            
         });
         
         
